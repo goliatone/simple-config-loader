@@ -8,4 +8,4 @@ var config = require('..')({
 //remove noise...
 delete config.data.package;
 
-console.log(config.data)
+console.log(JSON.stringify(config.data, null, 4));
