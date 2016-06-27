@@ -77,6 +77,7 @@ The output you get:
 ```js
 {
     "environment": "production",
+    //package:... deleted
     "amqp": {
         "topic": "simple-config-loader.updates",
         "exchange": "simple-config-loader.production",
