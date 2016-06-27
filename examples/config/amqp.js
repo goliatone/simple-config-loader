@@ -1,4 +1,5 @@
 module.exports = {
+    topic: '${app.name}.updates',
     exchange: '${app.name}.${environment}',
-    topic: '${app.name}.updates'
+    url: process.env.NODE_AMQP_URL
 };
