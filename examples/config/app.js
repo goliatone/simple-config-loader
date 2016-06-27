@@ -1,6 +1,6 @@
 module.exports = {
+    name: '${package.name}',
     version: '${package.version}',
-    name: '${package.name}'
 };
 
 module.exports.afterSolver = function(config){
