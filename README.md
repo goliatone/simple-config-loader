@@ -3,7 +3,9 @@
 Simple configuration loader module for Node.js applications.
 
 ## Getting Started
-Install the module with: `npm install simple-config-loader`
+Install the module with: `npm install simple-config-loader`.
+
+
 
 
 ## Example
