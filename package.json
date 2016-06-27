@@ -1,7 +1,7 @@
 {
   "name": "simple-config-loader",
   "description": "Simple configuration loader module",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "homepage": "https://github.com/goliatone/simple-config-loader",
   "author": {
     "name": "goliatone",
@@ -44,5 +44,9 @@
     "sinon": "^1.14.1",
     "mocha": "^2.2.4"
   },
-  "keywords": ["config", "configuration", "loader"]
+  "keywords": [
+    "config",
+    "configuration",
+    "loader"
+  ]
 }
