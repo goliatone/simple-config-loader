@@ -103,6 +103,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 * 2016-07-26 - V5.1: Pass section name to `afterSolver`
+* 2016-10-06 - V6.1: Updated dependencies
 
 ## License
 Copyright (c) 2016 goliatone  
