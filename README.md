@@ -98,6 +98,49 @@ The output you get:
 }
 ```
 
+### Options
+
+```js
+var DEFAULTS = {
+    strict: true,
+    logger: console,
+    autoinitialize: true,
+    config: {
+        environment: process.env.NODE_ENV || 'production'
+    },
+    packagePath: '../package',
+    configsPath: './',
+    basepath: _resolve(_join(__dirname, '../../../')),
+    dirname: 'config',
+    globOptions: {
+        matchPatterh: '**.js',
+        ignorePattern: 'index.js'
+    },
+    getConfigFiles: function(){
+        var target = _join(this.basepath, this.dirname, this.globOptions.matchPatterh);
+        var ignore = _join(this.basepath, this.dirname, this.globOptions.ignorePattern);
+        var files = glob.sync(target, {ignore: ignore});
+
+        if(!files || files.length === 0){
+            var msg = 'Not config files found at ' + target;
+            if(this.strict) throw new Error(msg);
+            else console.log(msg);
+        }
+        return files;
+    },
+    getPackage: function(data, path){
+        try{
+            data.package = require(path);
+            delete data.package.readme;
+        } catch(e) {
+            this.logger.error('Error loading package');
+            data = {};
+        }
+        return data;
+    }
+};
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
