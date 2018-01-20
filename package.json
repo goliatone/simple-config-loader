@@ -35,7 +35,6 @@
     "gextend": "^0.3.0",
     "gkeypath": "^0.6.0",
     "glob": "^7.0.5",
-    "grunt-cli": "^0.1.13",
     "gsolver": "^0.8",
     "yargonaut": "^1.1.2",
     "yargs": "^3.30.0"
